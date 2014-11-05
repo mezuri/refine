@@ -8,9 +8,9 @@ RUN apt-get install -y python
 RUN apt-get install -y wget
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
-RUN pip install -r refine-client-py/requirements.txt
 RUN git clone https://github.com/PaulMakepeace/refine-client-py.git
 RUN cd refine-client-py
+RUN pip install -r requirements.txt
 RUN python setup.py build
 RUN python setup.py install
 RUN cd ..
