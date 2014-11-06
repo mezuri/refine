@@ -7,7 +7,7 @@ print 'launched export_csv.py'
 print sys.argv
 
 project_id = sys.argv[1]
-output_file = sys.argv[2]
+output_file = '/tmp/outputs/refine_output.csv'
 
 server = refine.RefineServer()
 refine = refine.Refine(server)
