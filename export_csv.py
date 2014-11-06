@@ -2,6 +2,8 @@ import csv
 import sys
 from google.refine import refine
 
+print 'launched export_csv.py'
+
 print sys.argv
 
 project_id = sys.argv[1]

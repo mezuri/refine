@@ -1,6 +1,8 @@
 import sys
 from google.refine import refine
 
+print 'launched load_csv.py'
+
 print sys.argv
 
 project_file = sys.argv[1]
