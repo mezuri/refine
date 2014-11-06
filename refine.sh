@@ -1,9 +1,9 @@
 echo 'launched refine.sh'
-/google-refine-2.5/refine -i 0.0.0.0 > /tmp/server-log.txt &
+/google-refine-2.5/refine -i 0.0.0.0 > /tmp/refine_log.txt &
 echo 'called google-refine-2.5'
 
 sleep 1
-while ! grep -m1 ' Point your browser to' < /tmp/server-log.txt; do
+while ! grep -m1 ' Point your browser to' < /tmp/refine_log.txt; do
     sleep 1
 done
 
