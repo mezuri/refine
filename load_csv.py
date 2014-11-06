@@ -5,7 +5,7 @@ print 'launched load_csv.py'
 
 print sys.argv
 
-project_file = sys.argv[1]
+project_file = '/tmp/inputs/refine_input.csv'
 project_format = 'text/line-based/*sv'
 project_options = {}
 
