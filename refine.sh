@@ -8,5 +8,5 @@ while ! grep -m1 ' Point your browser to' < /tmp/refine_log.txt; do
 done
 
 export OPENREFINE_HOST=23.236.57.67
-python load_csv.py ‘/tmp/inputs/refine_input.csv’
+python load_csv.py '/tmp/inputs/refine_input.csv'
 echo 'called load_csv.py'
