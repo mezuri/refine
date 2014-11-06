@@ -10,4 +10,7 @@ project_options = {}
 server = refine.RefineServer()
 refine = refine.Refine(server)
 
-print refine.new_project(project_file=project_file, project_format=project_format, **project_options).project_url()
+project_url = refine.new_project(project_file=project_file, project_format=project_format, **project_options).project_url()
+
+with open('/tmp/refine_url', 'w') as text_file:
+    text_file.write(project_url)
