@@ -1,0 +1,17 @@
+[
+  {
+    "op": "core/fill-down",
+    "description": "Fill down cells in column testValue",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "testValue"
+  },
+  {
+    "op": "core/transpose-rows-into-columns",
+    "description": "Transpose every 2 cells in column _locale into separate columns",
+    "columnName": "_locale",
+    "rowCount": 2
+  }
+]
